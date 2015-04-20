@@ -74,7 +74,7 @@
 }
 - (IBAction)tapGestureRecognized:(UITapGestureRecognizer *)sender {
     self.blurOn = !self.blurOn;
-    [self.gradualBlurView animateBlurTo:self.blurOn withDuration:0.6 delay:1.0 animationCurve:GWViewAnimationCurveEaseOut completion:^(BOOL finished) {
+    [self.gradualBlurView animateBlurTo:self.blurOn withDuration:0.6 delay:0.0 animationCurve:GWViewAnimationCurveEaseOut completion:^(BOOL finished) {
         NSLog(@"Animation Complete %@", finished ? @"Finished" : @"Not Finished");
     }];
     
