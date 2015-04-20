@@ -14,6 +14,7 @@
 		054B831B1AE2C647003C729B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054B831A1AE2C647003C729B /* Images.xcassets */; };
 		054B831E1AE2C647003C729B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054B831C1AE2C647003C729B /* LaunchScreen.xib */; };
 		054B832A1AE2C648003C729B /* Gradual_BlurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B83291AE2C648003C729B /* Gradual_BlurTests.m */; };
+		054B83671AE2C695003C729B /* GWGradualBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B83661AE2C695003C729B /* GWGradualBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		054B83231AE2C648003C729B /* Gradual BlurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gradual BlurTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		054B83281AE2C648003C729B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054B83291AE2C648003C729B /* Gradual_BlurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gradual_BlurTests.m; sourceTree = "<group>"; };
+		054B83651AE2C695003C729B /* GWGradualBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWGradualBlurView.h; sourceTree = "<group>"; };
+		054B83661AE2C695003C729B /* GWGradualBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWGradualBlurView.m; sourceTree = "<group>"; };
+		054B83681AE35CB2003C729B /* GWViewBlurType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWViewBlurType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,9 @@
 				054B83121AE2C647003C729B /* AppDelegate.m */,
 				054B83141AE2C647003C729B /* ViewController.h */,
 				054B83151AE2C647003C729B /* ViewController.m */,
+				054B83651AE2C695003C729B /* GWGradualBlurView.h */,
+				054B83661AE2C695003C729B /* GWGradualBlurView.m */,
+				054B83681AE35CB2003C729B /* GWViewBlurType.h */,
 				054B83171AE2C647003C729B /* Main.storyboard */,
 				054B831A1AE2C647003C729B /* Images.xcassets */,
 				054B831C1AE2C647003C729B /* LaunchScreen.xib */,
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B83161AE2C647003C729B /* ViewController.m in Sources */,
+				054B83671AE2C695003C729B /* GWGradualBlurView.m in Sources */,
 				054B83131AE2C647003C729B /* AppDelegate.m in Sources */,
 				054B83101AE2C647003C729B /* main.m in Sources */,
 			);
@@ -346,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Gradual Blur/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Gradual Blur/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +424,7 @@
 				054B832F1AE2C648003C729B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054B83301AE2C648003C729B /* Build configuration list for PBXNativeTarget "Gradual BlurTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +433,7 @@
 				054B83321AE2C648003C729B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

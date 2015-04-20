@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,10 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WCX-da-NMu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WCX-da-NMu" secondAttribute="trailing" id="HNh-Mj-PLm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WCX-da-NMu" secondAttribute="bottom" id="O76-gm-xEY"/>
+                            <constraint firstItem="WCX-da-NMu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RJS-Fr-KIA"/>
+                            <constraint firstItem="WCX-da-NMu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fhe-Ns-vza"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="WCX-da-NMu" id="3Vk-wd-32j"/>
+                        <outlet property="tapGesture" destination="E36-k2-ZSJ" id="xi3-aP-QHB"/>
+                        <outlet property="tapHereButton" destination="OnX-kt-6aN" id="feg-5t-pjw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="E36-k2-ZSJ">
+                    <connections>
+                        <action selector="tapGestureRecognized:" destination="BYZ-38-t0r" id="b1B-ky-ke5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OnX-kt-6aN">
+                    <rect key="frame" x="0.0" y="0.0" width="219" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                    <state key="normal" title="Tap Here to Change The Picture">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapHereButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUH-f4-WWT"/>
+                    </connections>
+                </button>
             </objects>
         </scene>
     </scenes>
