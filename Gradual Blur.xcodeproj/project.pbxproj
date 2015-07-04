@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050CEE561B478122008EED43 /* ScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = 050CEE551B478122008EED43 /* ScreenCapture.gif */; };
 		054B83101AE2C647003C729B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B830F1AE2C647003C729B /* main.m */; };
 		054B83131AE2C647003C729B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B83121AE2C647003C729B /* AppDelegate.m */; };
 		054B83161AE2C647003C729B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B83151AE2C647003C729B /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050CEE551B478122008EED43 /* ScreenCapture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenCapture.gif; sourceTree = "<group>"; };
 		054B830A1AE2C647003C729B /* Gradual Blur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gradual Blur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		054B830E1AE2C647003C729B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054B830F1AE2C647003C729B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				054B83651AE2C695003C729B /* GWGradualBlurView.h */,
 				054B83661AE2C695003C729B /* GWGradualBlurView.m */,
 				054B83681AE35CB2003C729B /* GWViewBlurType.h */,
+				050CEE551B478122008EED43 /* ScreenCapture.gif */,
 				054B83171AE2C647003C729B /* Main.storyboard */,
 				054B831A1AE2C647003C729B /* Images.xcassets */,
 				054B831C1AE2C647003C729B /* LaunchScreen.xib */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B83191AE2C647003C729B /* Main.storyboard in Resources */,
+				050CEE561B478122008EED43 /* ScreenCapture.gif in Resources */,
 				054B831E1AE2C647003C729B /* LaunchScreen.xib in Resources */,
 				054B831B1AE2C647003C729B /* Images.xcassets in Resources */,
 			);
