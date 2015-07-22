@@ -1,6 +1,6 @@
 # Gradual-Blur
 <img src="/Gradual Blur/ScreenCapture.gif" align="right">
-Gradually blur background content.
+Gradually animate the blurring of background content.
 
 
 A GWGradualBlurView object provides a way to add a blur over views that gradually animates onto the screen.
